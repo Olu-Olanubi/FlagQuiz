@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">FlagQuiz</string>
+    <string name="question">Which country has the flag above?</string>
+    <string name="image_content_description">flags</string>
+    <string name="correct">Correct!!</string>
+    <string name="try_again">Wrong!. Try again!</string>
+    <string name="wrong">Wrong!, correct answer is </string>
+    <string name="score_sheet">Score: %d/%d</string>
+    <string name="blanks" />
+    <string name="question_name">Question %d/20</string>
+    <string name="finish">FINISH</string>
+    <string name="score_summary">Nice try.  You scored %d out of 20.%sThis is %s</string>
+    <string name="next">NEXT</string>
+
+
+    <string-array name="country_list">
+        <item>afghanistan</item>
+        <item>albania</item>
+        <item>algeria</item>
+        <item>andorra</item>
+        <item>angola</item>
+        <item>argentina</item>
+        <item>armenia</item>
+        <item>australia</item>
+        <item>austria</item>
+        <item>azerbaijan</item>
+        <item>bahamas</item>
+        <item>bahrain</item>
+        <item>bangladesh</item>
+        <item>barbados</item>
+        <item>belarus</item>
+        <item>belgium</item>
+        <item>belize</item>
+        <item>benin</item>
+        <item>bhutan</item>
+        <item>bolivia</item>
+        <item>botswana</item>
+        <item>brazil</item>
+        <item>brunei</item>
+        <item>bulgaria</item>
+        <item>burundi</item>
+        <item>cambodia</item>
+        <item>cameroon</item>
+        <item>canada</item>
+        <item>chad</item>
+        <item>chile</item>
+        <item>china</item>
+        <item>colombia</item>
+        <item>comoros</item>
+    </string-array>
+</resources>

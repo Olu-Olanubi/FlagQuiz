@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id = "@+id/tv_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/textSize"
+        android:text=" Question"
+        android:textColor = "#000"
+        android:textStyle = "italic"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity = "end"
+        />
+    <TextView
+        android:id = "@+id/tv_show_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/textSize"
+        android:text=" "
+        android:textColor = "#000"
+        android:textStyle = "italic"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity = "center"
+        />
+
+    <ImageView
+        android:layout_width = "wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight = "2"
+        android:id ="@+id/flag_image"
+        android:layout_margin="10dp"
+        android:padding = "10dp"
+        android:layout_gravity = "center"
+        android:contentDescription="@string/image_content_description" />
+
+    <TextView
+        android:id = "@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/textSize"
+        android:text="@string/question"
+        android:textColor = "#000"
+        android:textStyle = "italic"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity = "center"
+        />
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+        android:columnCount="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id= "@+id/bt_option1"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="wrap_content"
+                android:text="Button 1"
+                android:textSize="@dimen/optionTextSize"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id = "@+id/bt_option2"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Button 2"
+                android:textSize="@dimen/optionTextSize"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id = "@+id/bt_option3"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="wrap_content"
+                android:text="Button 3"
+                android:textSize="@dimen/optionTextSize"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id = "@+id/bt_option4"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Button 4"
+                android:textSize="@dimen/optionTextSize"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/tv_remark"
+        android:visibility="visible"
+        android:layout_margin = "10dp"
+        android:text = "Remarks!"
+        android:textSize="@dimen/textSize"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id = "@+id/bt_next_question"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/next"
+        android:textSize="@dimen/optionTextSize"
+        android:visibility="gone"/>
+
+</LinearLayout>
